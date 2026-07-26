@@ -1,8 +1,26 @@
 aid: eigencomm
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/eigencomm.png
 name: eigencomm
-description: eigencomm is a company surfaced as a portfolio company of qiming, softbank-vision-fund and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Shanghai Eigencomm Technology Co., Ltd. is a fabless semiconductor company founded in 2017 and
+  headquartered in the Zhangjiang district of Shanghai, China, dedicated to the research, design, and
+  sale of cellular Internet of Things (IoT) communication chipsets and their supporting software. Eigencomm
+  has mass-produced NB-IoT and Cat.1bis chip series that power smart meters, smart security, mobile payment,
+  shared devices, asset trackers, charging piles, wearables, smart firefighting, and smart home appliances,
+  and is developing 5G silicon. The company is backed by SoftBank Vision Fund II, Qiming Venture Partners,
+  and others, having raised roughly USD 171M across multiple rounds. It was added to the API Evangelist
+  network as a portfolio-lead stub; it publishes no public web API, developer portal, or OpenAPI at this time.
 url: https://raw.githubusercontent.com/api-evangelist/eigencomm/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Semiconductor
+- Chipsets
+- Internet of Things
+- Cellular IoT
+- NB-IoT
+- 5G
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/eigencomm-domain-security.yml
 - type: Website
   url: https://eigencomm.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
